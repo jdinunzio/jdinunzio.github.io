@@ -1,0 +1,9 @@
+<h3>Latest Posts</h3>
+{% for post in site.posts limit:4 %}
+  {% if post.title != page.title %}
+    <p>
+      <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
+      <span>({{ post.date | date: "%Y-%m-%d" }})</span>
+    </p>
+  {% endif %}
+{% endfor %}

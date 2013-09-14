@@ -1,0 +1,17 @@
+
+permalink: /posts/:categories/:year/:month/:day/:title.html
+exclude: ["README.md", "changelog.md"]
+pygments: true
+
+# Blog and Personal Info
+title : Strongly Typed
+tagline: Ramblings about programming languages
+author :
+  name : José Dinuncio
+  email : jose.dinuncio@gmail.com
+  github : jdinuncio
+#  twitter : notwitter
+#  feedburner : nofeedname
+
+production_url : http://jdinuncio.github.io
+

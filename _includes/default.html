@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site.author.name }}">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <link rel="shortcut icon" href="">
+    <title>{{ page.title }}</title>
+
+    <!-- Styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/syntax.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+    {% include _analytics.html %}
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Strongly Typed</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/posts.html">Posts</a></li>
+            <li><a href="/categories.html">Categories</a></li>
+            <li><a href="/tags.html">Tags</a></li>
+            <li><a href="/pages.html">Pages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container breadcrumbs-container">
+      <div class="row">
+        <div class="col-lg12">
+          {% include _breadcrumbs.html %}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <main class="col-lg-8">
+          <h1>{{ page.title }}</h1>
+
+          {{ content }}
+
+        </main>
+
+        <aside class="col-lg-4">
+          {% include _recents.html %}
+
+          <h3>Feeds</h3>
+          <ul>
+            <li><a href="/atom.xml">Atom</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
+          </ul>
+        </aside>
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p>© JD. 2013</p>
+      </footer>
+    </div>
+
+    <!-- Required scripts -->
+    <script src="/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+</body></html>
