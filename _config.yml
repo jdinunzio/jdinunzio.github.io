@@ -1,7 +1,7 @@
 
 permalink: /posts/:categories/:year/:month/:day/:title.html
 exclude: ["README.md", "changelog.md"]
-highlighter: true
+highlighter: rouge
 
 # Blog and Personal Info
 title : Strongly Typed
