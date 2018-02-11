@@ -7,11 +7,11 @@ highlighter: true
 title : Strongly Typed
 tagline: Ramblings about programming languages
 author :
-  name : José Dinuncio
+  name : José Di Nunzio
   email : jose.dinuncio@gmail.com
-  github : jdinuncio
+  github : jdinunzio
 #  twitter : notwitter
 #  feedburner : nofeedname
 
-production_url : http://jdinuncio.github.io
+production_url : http://jdinunzio.github.io
 
