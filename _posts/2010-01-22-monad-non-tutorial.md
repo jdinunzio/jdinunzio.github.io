@@ -51,14 +51,14 @@ class Monad m where
 So, a monad is an Haskell class. Or, if you are a Java guy (and let's confess 
 it, who isn't?), then you can think in a monad as an interface. But, again, 
 why? When you see `FileishInterface` with its methods open, close, read, write 
-and seek, you say: "Oh, so FileishInterface represents objects that behave like 
-a file, I get it". You can think in a FileishInterface instance using a TCP 
-connection or a byte array. With monads, there is nothing in its
-interface that make you think in a concrete example.
+and seek, you say: "Oh, so `FileishInterfac`e represents objects that behave like 
+a file, I get it". You can image an instance of `FileishInterface` using a TCP 
+connection or a byte array. But a monad doesn't provide to the
+untrained eye any clue of what id does.
 
-An that is a good thing. After all, FileishInterface is so concrete that it 
-could be used only in a very few cases. The interface of Monad is so generic 
-that it could be used in a wide range of objects. Paradoxically, that makes 
+And that is a good thing. After all, `FileishInterface` is so concrete that it 
+could be used only in very few cases. The interface of Monad is so generic 
+that it could be used in a wider range of sitations. Paradoxically, that makes 
 it hard to think in a use when you are learning the concept.
 
 
@@ -71,8 +71,8 @@ the Secret Category Cabal and I'm gonna spend my evenings talking about Kleisi
 arrows and functors and maybe Paul Hudak will friend me in facebook". 
 Curiously, you have never say "Mmm, today I feel like I'm gonna make a program
 that uses hashtables". You don't try to impose data structures to your 
-imperative programming, so why are you trying to force monads in your haskell 
-programs? Don't go after monads, let the monads find you.
+imperative programming, so why are you trying to force monads in haskell?
+Don't go after monads, let monads find you.
 
 You'll know when you need them. One day you will make a program and you'll 
 write a type constructor:
@@ -113,7 +113,7 @@ you have a value of type `a` instead, you'll need a way to transform it into
 Hopefully you know by now that the definition of monads is not the important 
 part for a programmer. You only need to focus in the type constructor and the 
 bind function. What does the type constructor represent? What is it used for? 
-How do they defined bind: how does it extract the value inside one of those new 
+How do they defined bind? How does it extract the value inside one of those new 
 types and how does it chain it to the `a -> m b` function?
 
 So, now you can go back to those tutorials that explain what are monads and give 
@@ -137,4 +137,3 @@ function. Giving the same input, it will always return the same C program!".
 Thinking in this way is useful to understand why IO is a monad, but it is a waste 
 of your attention. In your daily programming, you'll be better thinking that the 
 IO values are an imperative language embedded in haskell and `>>=` is its interpreter.
-
