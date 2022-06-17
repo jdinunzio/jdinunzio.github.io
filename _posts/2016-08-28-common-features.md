@@ -14,21 +14,21 @@ about Smalltalk, Lisp, Haskell and Forth.
 These languages have a lot in common. They usually are conceptually simple, 
 with clean syntax and a small set of unifying concepts. But, what I find 
 most fascinating is not the similitude between their design concepts, 
-but they seem to have similar phylosophy on the way to write programs written them.
+but that they seem to have similar phylosophy on the way programs are written in them.
 They seem to facilitate certain way to achieve answers than other more
 common languages seem to lack.
 
-**Smalltalk** is perhaps the best exponent of Object Oriented Programming
+**Smalltalk** is perhaps the best representative of Object Oriented Programming
 paradigm. The OO languages that came after it copied and emphasized the
-wrong aspects of what OOP is to retrofit it into a more imperative and
+wrong aspects of what OOP is to retrofit a more imperative and
 "efficient" implementation. The key realization of Smalltalk is *message
 passing*, where you have a network of objects working together and comunicating
 by sending message. Every object knows the *protocol* to speak with
 the objects it needs (the messages these objects understands) but nothing
 else about them. That allows an easy replacement of objects with others which 
 understand the same messages. And, since messages are implemented as methods,
-to be able to easily write replacement objects, it's convenient that
-every method be as short as possible and delegate as much as its work as possible to
+to be able to easily write replacement objects, it's convenient for
+every method to be as short as possible and delegate as much of its work as possible to
 other objects.
 
 **Lisp**, as you may know, is a multiparadigm programming language. You can program
