@@ -4,6 +4,8 @@ category : programming
 title: The One Thing Most Influential Programming Languages Have in Common
 tagline: (other than C, that is)
 tags : [programming]
+date-release: 2016-08-28
+date-update: 2020-08-28
 ---
 
 There's a small number of programming languages which have been highly 
