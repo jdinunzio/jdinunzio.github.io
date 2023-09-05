@@ -4,6 +4,8 @@ category : haskell
 title: A Monad Non-Tutorial
 tagline: "...or why you shouldn't ask what a monad is."
 tags : [functional, haskell]
+date-release: 2010-01-22
+date-update: 2020-01-24
 ---
 
 "What is a monad?" is one of the most common question when you're learning 
